@@ -6,10 +6,13 @@ config1.json
 test.py
 __pycache__/
 my_env/
-data/my_database.db
+data/*.db
 csv_to_db.py
 data/*.db
 indeed.py
 *.sh
 *.log
 SupabaseUpload/
+data/resume.pdf
+.DS_Store
+

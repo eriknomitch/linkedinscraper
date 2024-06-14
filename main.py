@@ -285,6 +285,7 @@ def main(config_file):
             print('Found new job: ', job['title'], 'at ', job['company'], job['job_url'])
             desc_soup = get_with_retry(job['job_url'], config)
             job['job_description'] = transform_job(desc_soup)
+            job['job_html'] = str(desc_soup)
             language = safe_detect(job['job_description'])
             if language not in config['languages']:
                 print('Job description language not supported: ', language)
