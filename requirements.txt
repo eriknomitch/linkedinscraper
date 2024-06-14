@@ -7,3 +7,5 @@ pysocks
 openai
 pdfminer.six
 flask_cors
+selenium
+webdriver-manager
